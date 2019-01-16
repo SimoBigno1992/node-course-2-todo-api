@@ -27,10 +27,6 @@ const users = [{
   _id: userTwoId,
   email: 'valentina@rossini.it',
   password: 'userTwoPass',
-  tokens: [{
-    token: jwt.sign({_id: userTwoId, access: 'auth'}, 'abc123').toString(),
-    access: 'auth'
-  }]
 }];
 
 const populateTodos = (done) => {
